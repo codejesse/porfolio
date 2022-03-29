@@ -92,7 +92,7 @@ function Works() {
                     </Links>
                 </motion.div>
             </motion.div>
-            {/* <Button>Github for more</Button> */}
+            <Button><img width={40} height={40} src="GitHub.png" alt='twitter' /> Github for more</Button>
         </WorksWrapper>
     )
 }
