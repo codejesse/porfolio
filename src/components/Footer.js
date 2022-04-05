@@ -52,10 +52,10 @@ function Footer() {
         <FooterDetails>
           Reach me
           <ContactDetails>
-            <a href='https://www.linkedin.com/in/jesse-beke/'><img width={80} height={80} src="LinkedIn.png" alt='twitter' /></a>
-            <a href='https://github.com/codejesse/'><img width={80} height={80} src="GitHub.png" alt='twitter' /></a>
-            <a href='https://twitter.com/jessebeke'><img width={80} height={80} src="Twitter.png" alt='twitter' /></a>
-            <a href="mailto:jessebeke10@gmail.com"><img width={80} height={80}  src="Gmail.png" alt='twitter' /></a>
+            <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/jesse-beke/'><img width={80} height={80} src="LinkedIn.png" alt='twitter' /></a>
+            <a target="_blank" rel="noreferrer" href='https://github.com/codejesse/'><img width={80} height={80} src="GitHub.png" alt='twitter' /></a>
+            <a target="_blank" rel="noreferrer" href='https://twitter.com/jessebeke'><img width={80} height={80} src="Twitter.png" alt='twitter' /></a>
+            <a target="_blank" rel="noreferrer" href="mailto:jessebeke10@gmail.com"><img width={80} height={80}  src="Gmail.png" alt='twitter' /></a>
           </ContactDetails>
         </FooterDetails>
       </FooterLogo>

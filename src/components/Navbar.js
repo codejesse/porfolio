@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import '../App.css'
+import { useState } from 'react';
 
 const NavWrapper = styled.div`
     display: flex;
@@ -13,27 +14,13 @@ const NavWrapper = styled.div`
     }
 `;
 
-const NavMenu = styled.div`
-    display: flex;
-    /* border: 1px solid black; */
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 65rem;
-    width: 10%;
-    @media (max-width: 768px) {
-        margin-left: 16rem;
-        width: auto;
-    }
-`;
-
 
 function Navbar() {
+    const [closedMenu, setClosedMenu] = useState(false)
+    const [OpenMenu, setOpenMenu] = useState(false)
     return (
         <NavWrapper>
             <img className='global-logo' src='logo.png' alt='logo' />
-            <NavMenu>
-                <p>menu</p>
-            </NavMenu>
         </NavWrapper>
     )
 }

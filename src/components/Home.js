@@ -21,10 +21,13 @@ const HeaderImage = styled.div`
 
 const HeaderText = styled.h1`
     text-align: center;
-    font-size: 6.5vw;
+    font-size: 5.4rem;
     height: auto;
     font-family: 'Poppins',sans-serif;
     margin-top: -1rem;
+    @media (max-width: 600px) {
+        font-size: 2.2rem;
+    }
 `;
 
 const HeaderPara = styled.p`

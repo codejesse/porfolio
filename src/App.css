@@ -84,9 +84,18 @@ body {
 .card-Header {
   font-size: 3.2rem;
   color: white;
+  margin-top: 3rem;
   font-family: "Poppins", sans-serif;
 }
 
+.card-desc {
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.88rem;
+  font-weight: bold;
+}
 
 @media(max-width: 600px) {
   .load {

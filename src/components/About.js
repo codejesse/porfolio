@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutWrapper = styled.div`
     display: flex;
+    /* border: 4px dashed black; */
     flex-direction: column;
     margin: 10rem;
     @media (max-width: 768px) {
@@ -28,6 +29,9 @@ const AboutPara = styled.div`
     font-size: 2rem;
     line-height: 54px;
     text-align: center;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
 `;
 
 const line1 = "Hello there i'm Jesse Beke a Front-End developer with 3 years of web experience crafting awesome websites and web applications that scale."

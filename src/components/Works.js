@@ -20,17 +20,15 @@ const WorksHeader = styled.div`
     }
 `;
 
-const Button = styled.button`
-    width: 392px;
-    height: 100px;
-    background: #000000;
-    border: none;
-    border-radius: 35px;
+const Button = styled.a`
+    display: flex;
+    justify-content: center;
     margin: auto;
     margin-top: 7rem;
-    color: white;
+    color: black;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
+    cursor: pointer;
 `;
 
 const Links = styled.div`
@@ -71,28 +69,31 @@ function Works() {
                 viewport={{ once: true, amount: 0.8 }}
             >
                 <motion.div className='card' variants={cardVariants}>
-                    <h1 className='card-Header test'>Wilding</h1>
+                    <h1 className='card-Header'>Wilding</h1>
+                    <p className='card-desc'>Cosmetic website made with Reactjs and styled-components</p>
                     <Links>
-                        <a href="https://github.com/codejesse/wilding"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
-                        <a href="https://wilding.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/codejesse/wilding"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://wilding.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
                     </Links>
                 </motion.div>
                 <motion.div className='card' variants={cardVariants}>
                     <h1 className='card-Header'>Space-x</h1>
+                    <p className='card-desc'>spacex launch tracker made with Reactjs</p>
                     <Links>
-                        <a href="https://github.com/codejesse/spacex"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
-                        <a href="https://spaceex.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/codejesse/spacex"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://spaceex.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
                     </Links>
                 </motion.div>
                 <motion.div className='card' variants={cardVariants}>
-                    <h1 className='card-Header'>Takenote</h1>
+                    <h1 className='card-Header'>Screentime</h1>
+                    <p className='card-desc'>Movies aggragator website made with Reactjs + moviesDb Api</p>
                     <Links>
-                        <a href="https://github.com/codejesse/takenote"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
-                        <a href="https://takenote-liart.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/codejesse/ScreenTime-movie-app"><img width={60} height={60} src="GitHub.png" alt='twitter' /></a>
+                        <a target="_blank" rel="noreferrer" href="https://screentime.vercel.app/"><img width={60} height={60} src="Link.png" alt='twitter' /></a>
                     </Links>
                 </motion.div>
             </motion.div>
-            <Button><img width={40} height={40} src="GitHub.png" alt='twitter' /> Github for more</Button>
+            <a href='https://github.com/codejesse/'><Button>Github for more</Button></a>
         </WorksWrapper>
     )
 }
